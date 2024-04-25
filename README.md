@@ -10,17 +10,19 @@ make up # build image and run server with all dependencies and migrations
 make stop # stop all containers
 make down #stop and remove all containers
 ```
+HTTP server will be available on http://localhost:8080
+
+### Request example
+```shell
+curl -X POST --data '{"email": "my_email@gmailcom"}' localhost:8080/api/v1/invitations/twitter-reg1
+```
+
 
 ## Mongo-express
 Available on http://localhost:8081
 ### Credentials:
 login: user \
 password: password
-
-## Request example
-```shell
-curl -X POST --data '{"email": "my_email@gmailcom"}' localhost:8080/api/v1/invitations/twitter-reg1
-```
 
 ## Things to improve
 1. On startup save all codes into RAM to avoid database calls for nonexistent codes
