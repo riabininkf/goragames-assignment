@@ -1,0 +1,8 @@
+mongodb:
+  conn: mongodb://127.0.0.1:27017/?connect=direct
+  database: auth
+http:
+  port: 8080
+logger:
+  disableCaller: false
+  disableStacktrace: true
